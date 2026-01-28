@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>InstaBuy | Home</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Insta<span>Buy</span></div>
+        <ul class="nav-links">
+            <li><a href="/home">Home</a></li>
+            <li><a href="/shop">Shop</a></li>
+            <li><a href="/cart">Cart</a></li>
+            <li><a href="/logout" style="color:red;">Logout ({{ user }})</a></li>
+        </ul>
+    </nav>
+    <div style="text-align:center; padding: 50px;">
+        <h1>Welcome, {{ user }}!</h1>
+        <p>Start shopping for the best deals today.</p>
+        <a href="/shop" class="btn" style="display:inline-block; width:auto; margin-top:20px;">Go to Shop</a>
+    </div>
+</body>
+</html>
